@@ -1,0 +1,26 @@
+What are the components of the Spring MVC Flow?
+Controller
+Service
+Repository
+View Resolver
+Handler Mapping
+
+What does Annotation-driven do ?
+Enables support for specific annotations [e.g. @RequestMapping,
+etc.] that are required for Spring MVC to dispatch requests to
+@Controllers. It is based on MVC XML namespace
+
+What does Component-Scan do ?
+Scans defined packages to find and register @Component-annotated
+classes and activate basic annotations[e.g. @Autowired] - within
+the current application context.
+
+
+What is @RequestParam? Give an example.
+
+
+
+What is the purpose of the Service Layer in the Spring 3 Tier architecture?
+
+Business Logic
+Manage Transaction in Service layer
