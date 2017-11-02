@@ -1,0 +1,22 @@
+Describe the two ways to apply the @ModelAttribute annotation
+
+
+Can be placed on a method parameter:
+@RequestMapping(value = "/addBook", method = RequestMethod.POST)
+public String saveBook(@ModelAttribute("newBook") Book book) {}
+
+Can be placed on method. Method invoked before methods annotated with @RequestMapping
+@ModelAttribute("books")
+List<Book> addBookList(Model model) {
+return bookService.getAllBooks();
+}
+
+Give an example of using the form:form tag
+
+What is the Formatter interface used for?
+
+cannot bind specific types,  
+
+What is the Spring message tag for?
+
+Internalization
