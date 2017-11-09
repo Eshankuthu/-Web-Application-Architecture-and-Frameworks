@@ -1,0 +1,11 @@
+What are JavaBean vs POJO vs Spring Bean? Provide an example for each of them.
+
+A java object can be a javaBean
+
+
+What are the different "type" of scope we introduced in the class?
+
+status.setComplete(); - What does this line of code do?
+
+
+What is PRG pattern? What kind of problem does PRG pattern solve? Provide a concrete example if you still have time for this quiz.
