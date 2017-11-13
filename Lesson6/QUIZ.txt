@@ -1,0 +1,21 @@
+Describe the two types of Handler Exception Resolvers
+REST & Ajax
+HandlerExceptionResolver interface
+@ControllerAdvice “interceptor”
+
+
+What are the 3 Locale Resolvers?
+
+Browser’s Accept-Language header
+Session
+Cookie
+
+What does i18n Stand for ?
+Internationalization (sometimes shortened to "I18N , meaning "I - eighteen letters -N") is the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization .
+
+
+Why use @ControllerAdvice?
+\@ControllerAdvice used for global error handling in the Spring MVC application.It also has full control over the body of the response and the status code.
+
+
+What is special about InternalResourceViewResolver ?

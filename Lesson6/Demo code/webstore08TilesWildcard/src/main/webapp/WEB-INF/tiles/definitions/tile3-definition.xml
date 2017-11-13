@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/layoutTemplate.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="default.tagline" />
+ 		<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+
+<!-- Wild Card for all controllers...
+     access by /welcome for view folder JSP location
+     product/products for view/product folder JSP location
+ -->
+	 	<definition name="*/*" extends="baseLayout">
+		<put-attribute name="title" value="{2}.title" />
+		<put-attribute name="heading" value="{2}.heading" />
+		<put-attribute name="tagline" value="{2}.tagline" />
+ 		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp" />
+	</definition>
+	 	
+	<definition name="productNotFound" extends="baseLayout">
+		<put-attribute name="title" value="Product Exception" />
+ 		<put-attribute name="body" value="/WEB-INF/views/productNotFound.jsp" />
+	</definition>
+	 	
+</tiles-definitions>
