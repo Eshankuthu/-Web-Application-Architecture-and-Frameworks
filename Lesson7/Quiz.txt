@@ -1,0 +1,3 @@
+Compare a Restful Ajax service with a “regular” Spring MVC request/response scenario. 
+
+
